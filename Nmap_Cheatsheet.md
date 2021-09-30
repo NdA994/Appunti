@@ -74,3 +74,9 @@ Vengono inviati pacchetti IP con il campo IP protocol specificato all'interno de
 #### ARP Scan (-PR) 
 Molto affidabile, purtroppo può essere utilizzato esclusivamente se ci si trova nella stessa network da scansionare.
 
+#### Flag Utili
+`-PN` non effettua il probing per verificare se l'host è attivo o meno attraverso un ping scan. In questa fase è utile inserirlo poiché siamo noi che specifichiamo che tipo di scansione fare e non risulta necessario verificare che l'host risulti essere attivo.
+
+`-n` non effettua il reverse lookup dell'indirizzo specificato. Spesso è utile inserirlo poiché questa operazione è stata effettuata preliminarmente.
+
+`-v` permette di ottenere informazioni aggiuntive per quanto riguarda la scansione. Potrebbe essere utile anche per rilevare la presenza di Firewall che droppano i pacchetti che inviamo.
