@@ -1,0 +1,114 @@
+{
+  "main": {
+    "id": "3bb36a764ce066c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e6eb3279e77d6d6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Nmap_Cheatsheet.md",
+            "mode": "source"
+          }
+        }
+      },
+      {
+        "id": "7d2b178575f4c887",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Nmap_Cheatsheet.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0cff904e13019332",
+    "type": "split",
+    "children": [
+      {
+        "id": "24baad56fd28399c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8ea8af7f7170511",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7ad3115bf94be81f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "320e6d939b62c128",
+    "type": "split",
+    "children": [
+      {
+        "id": "eacd4cf6089b34f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c24045b0aa09d9c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Nmap_Cheatsheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "5e6eb3279e77d6d6",
+  "lastOpenFiles": [
+    "Nmap_Cheatsheet.md",
+    "nmap cheatsheet.md",
+    "PT/Priv_Escalation/Comandi_linux.md",
+    "Untitled.md",
+    "BOF/ComandiUtili.md.md",
+    "BOF/x86.md.md",
+    "Priv_Escalation/Comandi_linux.md",
+    "Priv_Escalation/Untitled.md",
+    "README.md",
+    "ComandiUtili.md.md"
+  ]
+}
