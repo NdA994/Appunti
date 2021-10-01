@@ -80,3 +80,38 @@ Molto affidabile, purtroppo può essere utilizzato esclusivamente se ci si trova
 `-n` non effettua il reverse lookup dell'indirizzo specificato. Spesso è utile inserirlo poiché questa operazione è stata effettuata preliminarmente.
 
 `-v` permette di ottenere informazioni aggiuntive per quanto riguarda la scansione. Potrebbe essere utile anche per rilevare la presenza di Firewall che droppano i pacchetti che inviamo.
+
+# Port Scanning	
+Durante la fase di Port Scanning si è interessati ad individuare tutte le porte in ascolto su una determinata macchina. 
+
+### Tipi di porte
+-	**open** Una applicazione sulla suddetta porta è attiva e accetta datagrammi TCP o UDP.
+-	**closed** Sulla porta non vi è nessuna applicazione in ascolto.
+-	**filtered** Non si riesce a determinare se la porta è chiusa o meno poiché politiche di filtraggio dei pacchetti prevengono la raggiungibilità della porta.
+-	**unfiltered** La porta è raggiungibile ma Nmap non è in grado di comprendere se c'è una applicazione in ascolto o meno.
+-	**open | filtered** Nmap non è in grado di determinare se la porta è in ascolto o meno. Capita quando lo stato di porta aperta è determinato da una assenza di risposta.
+-	**closed | filtered** Nmap non è in grado di determinare se la porta è filtrata oppure non vi è nessuna applicazione in ascolto. 
+
+#### TCP SYN Stealth (-sS) 
+
+#### TCP Connect (-sT)
+
+#### TCP FIN, XMAS e NULL Scan (-sF, -sX, -sN)
+
+#### TCP Window (-sW)
+
+#### TCP Maimon (-sM)
+
+#### TCP Idle (-sI < zombie host >)
+
+#### IP portcol (-sO)
+
+#### TCP FTP bounce (-b < FTP bounce proxy >)
+
+#### Flag utili
+`-PN` In questo genere di attività in genere non si è interessati a verificare che l'host sia attivo poiché questa procedura è già stata eseguita nella fase di Host Discovery
+
+`-n` Generalemente durante la fase di Host Discovery si è già effettuato il reverse lookup dei nomi dominio e quindi risulterebbe un inutile spreco di tempo (questa opzione è compresa nel `-PN`)
+
+`-6` Si richiede ad Nmap l'utilizzo del protocollo IPv6
+

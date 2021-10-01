@@ -63,7 +63,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "320e6d939b62c128",
@@ -100,8 +101,8 @@
   "active": "5e6eb3279e77d6d6",
   "lastOpenFiles": [
     "Nmap_Cheatsheet.md",
-    "nmap cheatsheet.md",
     "PT/Priv_Escalation/Comandi_linux.md",
+    "nmap cheatsheet.md",
     "Untitled.md",
     "BOF/ComandiUtili.md.md",
     "BOF/x86.md.md",
