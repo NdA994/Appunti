@@ -93,8 +93,44 @@ Durante la fase di Port Scanning si è interessati ad individuare tutte le porte
 -	**closed | filtered** Nmap non è in grado di determinare se la porta è filtrata oppure non vi è nessuna applicazione in ascolto. 
 
 #### TCP SYN Stealth (-sS) 
+Scan estremamente veloce ed estramente adatto in constesti in cui le attività di scanning non sono ostacolate. Questo perché prova ad aprire una connessione TCP attraverso l'invio di un SYN. Nel caso di ricezione di un ACK Nmap invia un RST al fine di evitare il completamento dell'handshake.
+
+Risposta | Porta
+------------ | ------------
+TCP SYN/ACK response | open
+TCP RST | closed
+No Response | filtered
+ICMP unreachable error | filtered
+
+La problematica di questo tipo di scansione è quando siamo in presenza di un firewall che droppa le nostre richieste SYN su determinate porte. Questo tipo di approccio rallenta estremamente le scansioni effettuate a casua degli elevati timeout che il comportamento del firewall causa. 
 
 #### TCP Connect (-sT)
+Funziona allo stesso tipo del SYN Scan ma al posto di terminare subito la connessione completa l'handshake inviando un messaggio di ACK. Se si può utilizzare il SYN Scan quest'ultimo deve essere preferito dato che impiega la metà del tempo. 
+
+Risposta | Porta
+------------ | ------------
+TCP SYN/ACK response | open
+TCP RST | closed
+No Response | filtered
+ICMP unreachable error | filtered
+
+#### UDP Scan 
+Lo UDP Scan è generalmente più lento rispetto a quello su TCP. 
+**Ricorda** non sottovalutare comunque questa fase poiché molte vulnerabilità potrebbero essere presenti su servizi che utilizzano a livello trasporto UDP e nel caso non venisse eseguita quest'ultime non sarebbero trovate.
+ 
+Risposta | Porta
+------------ | ------------
+Qualsiasi datagramma UDP provenitente dall'host *(inusuale)* | open
+Nessuna risposta anche in presenza di ritrasmissioni | open | filtered
+ICMP port unreachable | closed
+Altri messaggi di tipo ICMP | filtered
+
+La principale sfida nell'individuazione delle porte UDP è che generalmente le applicazioni non forniscono alcun tipo di risposta se stimolate dato che probabilmente quest'ultime scarteranno il datagramma essendo vuoto. Si potrebbe pensare che questo sia un problema risolvibile poiché le porte negli altri stati rispondono ma purtroppo in genere i firewall droppano i suddetti pacchetti di risposta. Inoltre, molti host limitano il rate di invio di pacchetti ICMP.
+
+**NOTA IMPORTANTE** Per distinguere una porta *open* da una *open | filter* si potrebbe pensare di utilizzare il flag `-sV`. Questo perché l'applicazione potrebbe scartare datagrammi che considera invalidi e non fornire risposta. Con il flag `-sV` Nmap utilizza datagrammi ben formati.
+
+**FLAG UTILI** 
+`-version-intesity 0` Tale opzione informa Nmap di provare esclusivamente i servizi più probabili verso una determinata porta. 
 
 #### TCP FIN, XMAS e NULL Scan (-sF, -sX, -sN)
 
