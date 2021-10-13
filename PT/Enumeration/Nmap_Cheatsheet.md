@@ -45,9 +45,9 @@ nmap -PS -PN CIDR
 
 Porte | Descrizione
 ------------ | ------------
-1-1023 | Porte Well-Know. (scegli porte di uso comune, per es. 80)
-1024–49151 | Registed port. (2 a caso)
-49152–65535 | Dynamic port. Porte utilizzate dal client per aprire connessioni con il server. (2 a caso)
+1 - 1023 | Porte Well-Know (scegli porte di uso comune, per es. 80)
+1024 – 49151 | Registed port (2 a caso)
+49152 – 65535 | Dynamic port Porte utilizzate dal client per aprire connessioni con il server. (2 a caso)
 
 Questo perchè in presenza di un firewall vuoi forzare la risposta di un ACK da parte dell'host oppure sperare che quelle porte non siano bloccate dal firewall.
 
@@ -125,7 +125,7 @@ Nessuna risposta anche in presenza di ritrasmissioni | open | filtered
 ICMP port unreachable | closed
 Altri messaggi di tipo ICMP | filtered
 
-La principale sfida nell'individuazione delle porte UDP è che generalmente le applicazioni non forniscono alcun tipo di risposta se stimolate dato che probabilmente quest'ultime scarteranno il datagramma essendo vuoto. Si potrebbe pensare che questo sia un problema risolvibile poiché le porte negli altri stati rispondono ma purtroppo in genere i firewall droppano i suddetti pacchetti di risposta. Inoltre, molti host limitano il rate di invio di pacchetti ICMP.
+La principale sfida nell'individuazione delle porte UDP è che generalmente le applicazioni non forniscono alcun tipo di risposta se stimolate dato che probabilmente quest'ultime scarteranno il datagramma essendo vuoto. Oltre a ciò, i firewall spesso droppano i pacchetti di risposta di tipo ICMP provenienti da quel determinato host oppure è lo stesso host che cerca di limitare l'invio di quest'ultimi. Questo rende l'individuazione di tali porte estremamente complesso dato l'elevato numero di porte  *open | filtered* che potremmo individuare all'interno delle nostre scansioni.
 
 **NOTA IMPORTANTE** Per distinguere una porta *open* da una *open | filter* si potrebbe pensare di utilizzare il flag `-sV`. Questo perché l'applicazione potrebbe scartare datagrammi che considera invalidi e non fornire risposta. Con il flag `-sV` Nmap utilizza datagrammi ben formati.
 
@@ -134,15 +134,21 @@ La principale sfida nell'individuazione delle porte UDP è che generalmente le a
 
 #### TCP FIN, XMAS e NULL Scan (-sF, -sX, -sN)
 
+
 #### TCP Window (-sW)
+
 
 #### TCP Maimon (-sM)
 
+
 #### TCP Idle (-sI < zombie host >)
+
 
 #### IP portcol (-sO)
 
+
 #### TCP FTP bounce (-b < FTP bounce proxy >)
+
 
 #### Flag utili
 `-PN` In questo genere di attività in genere non si è interessati a verificare che l'host sia attivo poiché questa procedura è già stata eseguita nella fase di Host Discovery

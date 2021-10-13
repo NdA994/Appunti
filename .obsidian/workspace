@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Nmap_Cheatsheet.md",
+            "file": "PT/Priv_Escalation/Comandi_linux.md",
             "mode": "source"
           }
         }
@@ -20,7 +20,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Nmap_Cheatsheet.md",
+            "file": "PT/Enumeration/Nmap_Cheatsheet.md",
             "mode": "preview"
           }
         }
@@ -63,8 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "320e6d939b62c128",
@@ -80,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nmap_Cheatsheet.md",
+                "file": "PT/Priv_Escalation/Comandi_linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,15 +99,15 @@
   },
   "active": "5e6eb3279e77d6d6",
   "lastOpenFiles": [
-    "Nmap_Cheatsheet.md",
     "PT/Priv_Escalation/Comandi_linux.md",
-    "nmap cheatsheet.md",
+    "PT/Enumeration/Nmap_Cheatsheet.md",
+    "Automation/Ansible.md",
+    "Nmap_Cheatsheet.md",
     "Untitled.md",
     "BOF/ComandiUtili.md.md",
+    "nmap cheatsheet.md",
     "BOF/x86.md.md",
     "Priv_Escalation/Comandi_linux.md",
-    "Priv_Escalation/Untitled.md",
-    "README.md",
-    "ComandiUtili.md.md"
+    "Priv_Escalation/Untitled.md"
   ]
 }
