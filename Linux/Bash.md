@@ -31,8 +31,18 @@ fi
 **RICORDA** che [ ] fanno riferimento al comando test ( *v. man [* )
 
 ### Cicli
+#### For Loop
 ```bash
-gdb -q file-esseguibile
+for var-name in <list> 
+do 
+	<perform action>
+done
 ```
 
-#### 
+#### While Loops
+```bash
+while [ <some-test> ] 
+do 
+	<perform action>
+done
+```
