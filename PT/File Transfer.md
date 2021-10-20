@@ -9,7 +9,7 @@ Macchina da cui prelevare il file
 nc -nlvp <IP> <PORT> < <FILE>
 ```
 
-## Socat 
+## socat 
 Macchina su cui trasferire il file 
 ```bash
 socat TCP4-LISTEN:<PORT>,fork file:<FILE>,create
