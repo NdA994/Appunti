@@ -1,6 +1,6 @@
 # Bash 
 Cose utili che scordo sempre
-## Cicli di iterazione
+
 Varibile | Descrizione
 ------------ | ------------
 $0 | Nome del BASH script

@@ -121,7 +121,7 @@ Lo UDP Scan è generalmente più lento rispetto a quello su TCP.
 Risposta | Porta
 ------------ | ------------
 Qualsiasi datagramma UDP provenitente dall'host *(inusuale)* | open
-Nessuna risposta anche in presenza di ritrasmissioni | open | filtered
+Nessuna risposta anche in presenza di ritrasmissioni | open \| filtered
 ICMP port unreachable | closed
 Altri messaggi di tipo ICMP | filtered
 
