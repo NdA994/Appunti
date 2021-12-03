@@ -13,6 +13,17 @@
             "mode": "source"
           }
         }
+      },
+      {
+        "id": "00e81d2268ca896d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Linux/Bash.md",
+            "mode": "preview"
+          }
+        }
       }
     ],
     "direction": "vertical"
