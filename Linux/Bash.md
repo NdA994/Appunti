@@ -46,3 +46,13 @@ do
 	<perform action>
 done
 ```
+
+
+## Prompt String
+Varibile | Descrizione
+------------ | ------------
+PS0 | Il valore di questo parametro viene mostrato da una scell INTERATTIVA dopo la lettura di un comando e dopo che quest'ultimo sia eseguito.
+PS1 | Il valore di questo parametro viene mostrato allputente come primary prompt script. (ad se. nda@ubuntu:~$)
+PS2 | Il valore di questo parametro viene mostrato quando si prova a lanciare un multiple-line command. 
+PS3 | Il valore di questo valore è mostrato quando si è in attesa di un input utente
+PS4 | è il prefisso della debugging trace line per gli script bash. (Uno script si lancia in modalità `bash -x <script.sh>`)

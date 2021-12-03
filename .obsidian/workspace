@@ -9,19 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PT/Enumeration/Nmap_Cheatsheet.md",
+            "file": "Linux/Bash.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "8aa889b37af0787f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Fuzzing/Fuzzing.md",
-            "mode": "preview"
           }
         }
       }
@@ -63,7 +52,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "320e6d939b62c128",
@@ -79,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PT/Enumeration/Nmap_Cheatsheet.md",
+                "file": "Linux/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,15 +89,15 @@
   },
   "active": "5a01de84a8a3cf5b",
   "lastOpenFiles": [
-    "PT/Enumeration/Nmap_Cheatsheet.md",
-    "Fuzzing/Fuzzing.md",
-    "Challenge/PortSwigger/XSS.md",
-    "Automation/Terraform.md",
-    "BOF/x86.md.md",
-    "BOF/ComandiUtili.md.md",
-    "Automation/Ansible.md",
     "Linux/Bash.md",
     "PT/File Transfer.md",
-    "PT/Reverse Shell and Bind Shell.md"
+    "Automation/Terraform/Terraform_cheatSheet.md",
+    "Challenge/PortSwigger/XSS.md",
+    "Fuzzing/Fuzzing.md",
+    "Automation/Terraform.md",
+    "PT/Enumeration/Nmap_Cheatsheet.md",
+    "BOF/x86.md.md",
+    "BOF/ComandiUtili.md.md",
+    "Automation/Ansible.md"
   ]
 }
