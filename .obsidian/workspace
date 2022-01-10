@@ -4,24 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5a01de84a8a3cf5b",
+        "id": "a20cb4fa5bb2fb97",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Linux/Bash.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       },
       {
-        "id": "00e81d2268ca896d",
+        "id": "5fa0df98de91c15c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Bash.md",
-            "mode": "preview"
+            "file": "Challenge/sitiChallenge.md",
+            "mode": "preview",
+            "source": true
           }
         }
       }
@@ -51,7 +49,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -63,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "320e6d939b62c128",
@@ -80,7 +77,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5a01de84a8a3cf5b",
+  "active": "a20cb4fa5bb2fb97",
   "lastOpenFiles": [
-    "Linux/Bash.md",
-    "PT/File Transfer.md",
-    "Automation/Terraform/Terraform_cheatSheet.md",
-    "Challenge/PortSwigger/XSS.md",
-    "Fuzzing/Fuzzing.md",
-    "Automation/Terraform.md",
+    "Windows/Sysmon.md",
     "PT/Enumeration/Nmap_Cheatsheet.md",
+    "Challenge/sitiChallenge.md",
+    "PT/Priv_Escalation/Comandi_linux.md",
+    "Linux/Bash.md",
+    "Fuzzing/Fuzzing.md",
+    "Challenge/PortSwigger/SQLi.md",
+    "Challenge/PortSwigger/XSS.md",
     "BOF/x86.md.md",
-    "BOF/ComandiUtili.md.md",
-    "Automation/Ansible.md"
+    "BOF/ComandiUtili.md.md"
   ]
 }
