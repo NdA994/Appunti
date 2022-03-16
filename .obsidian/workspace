@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5fa0df98de91c15c",
+        "id": "58d15fa6370c7920",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Linux/Bash.md",
-            "mode": "source",
-            "source": true
-          }
-        }
-      },
-      {
-        "id": "ca1c295e7e914277",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Database/typeDB/TydeDB.md",
-            "mode": "preview",
-            "source": true
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -81,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,8 +82,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5fa0df98de91c15c",
+  "active": "58d15fa6370c7920",
   "lastOpenFiles": [
+    "BOF/ComandiUtili.md",
     "Linux/Bash.md",
     "Database/typeDB/TydeDB.md",
     "Automation/Ansible.md",
@@ -109,7 +93,6 @@
     "Container and VMs/Untitled.md",
     "Fuzzing/Fuzzing.md",
     "PT/Priv_Escalation/Comandi_linux.md",
-    "Challenge/PortSwigger/SQLi.md",
-    "Challenge/sitiChallenge.md"
+    "Challenge/PortSwigger/SQLi.md"
   ]
 }

@@ -1,4 +1,9 @@
 # Comandi utili
+## checksec
+```bash
+apt install -y checksec
+checksec --file==<locazione file>
+```
 
 ## gdb
 Lanciare gdb
