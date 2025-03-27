@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "6eed7dcb344c603a",
+    "type": "split",
+    "children": [
+      {
+        "id": "b085e5cdfd4dd827",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6d678d8d3f21ec7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WAPT/execute_after_read.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "execute_after_read"
+            }
+          },
+          {
+            "id": "164534ba89c15d10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WAPT/SQL_Injection.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "SQL_Injection"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "201f987fd8bcc311",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c90eee255e96221",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43462d19979dcc7a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "2f408ae7957a5d84",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ffe1c5d357e98c0d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "8d2df8df02a9ae58",
+    "type": "split",
+    "children": [
+      {
+        "id": "b73b06e139677f49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36cf7c0d264a20f9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "WAPT/SQL Injection.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for SQL Injection"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "command-palette:Apri riquadro comandi": false,
+      "markdown-importer:Apri importazione Markdown": false
+    }
+  },
+  "active": "164534ba89c15d10",
+  "lastOpenFiles": [
+    "PT/Priv_Escalation/Comandi_linux.md",
+    "PT/File Transfer.md",
+    "PT/Reverse Shell and Bind Shell.md",
+    "BOF/ComandiUtili.md",
+    "BOF/x86.md.md",
+    "Challenge/sitiChallenge.md",
+    "Container and VMs/Untitled.md",
+    "Database/typeDB/TydeDB.md",
+    "Linux/Bash.md",
+    "WAPT/SQL_Injection.md",
+    "Fuzzing/Fuzzing.md",
+    "WAPT/server_side_template_injection.md",
+    "WAPT/execute_after_read.md",
+    "README.md",
+    "Challenge/PortSwigger/SQLi.md",
+    "Challenge/PortSwigger/XSS.md",
+    "WAPT/PortSwigger Academy/SQLI",
+    "WAPT/PortSwigger Academy",
+    "Burp"
+  ]
+}
