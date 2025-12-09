@@ -4,39 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "b085e5cdfd4dd827",
+        "id": "764ad803dfd05072",
         "type": "tabs",
         "children": [
           {
-            "id": "f6d678d8d3f21ec7",
+            "id": "d8dae06ee6933796",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WAPT/execute_after_read.md",
+                "file": "Programmazione/C/Parametri di input - Gengetopt.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "execute_after_read"
+              "title": "Parametri di input - Gengetopt"
             }
           },
           {
-            "id": "164534ba89c15d10",
+            "id": "dfa2f615eb5d030c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WAPT/SQL_Injection.md",
+                "file": "PT/Enumeration/Nmap_Cheatsheet.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "SQL_Injection"
+              "title": "Nmap_Cheatsheet"
+            }
+          },
+          {
+            "id": "24fc5f23fbc1a3e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PT/Priv_Escalation/Comandi_linux.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Comandi_linux"
+            }
+          },
+          {
+            "id": "6a457158fb680b1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PT/File Transfer.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "File Transfer"
+            }
+          },
+          {
+            "id": "bc7232b5105f5010",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programmazione/C/Parametri di input - Gengetopt.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Parametri di input - Gengetopt"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -93,8 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8d2df8df02a9ae58",
@@ -110,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WAPT/SQL Injection.md",
+                "file": "WAPT/execute_after_read.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +161,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for SQL Injection"
+              "title": "Riferimenti a execute_after_read"
             }
           }
         ]
@@ -132,6 +173,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Apri selezione rapida": false,
       "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": false,
@@ -139,24 +181,30 @@
       "markdown-importer:Apri importazione Markdown": false
     }
   },
-  "active": "164534ba89c15d10",
+  "active": "bc7232b5105f5010",
   "lastOpenFiles": [
-    "PT/Priv_Escalation/Comandi_linux.md",
-    "PT/File Transfer.md",
-    "PT/Reverse Shell and Bind Shell.md",
-    "BOF/ComandiUtili.md",
-    "BOF/x86.md.md",
-    "Challenge/sitiChallenge.md",
-    "Container and VMs/Untitled.md",
-    "Database/typeDB/TydeDB.md",
     "Linux/Bash.md",
+    "Linux/TTY.md",
+    "Challenge/sitiChallenge.md",
+    "README.md",
     "WAPT/SQL_Injection.md",
-    "Fuzzing/Fuzzing.md",
     "WAPT/server_side_template_injection.md",
     "WAPT/execute_after_read.md",
-    "README.md",
+    "PT/Priv_Escalation/Comandi_linux.md",
+    "PT/Reverse Shell and Bind Shell.md",
+    "PT/File Transfer.md",
+    "PT/Enumeration/Nmap_Cheatsheet.md",
+    "Programmazione/C/Parametri di input - Gengetopt.md",
     "Challenge/PortSwigger/SQLi.md",
     "Challenge/PortSwigger/XSS.md",
+    "Container and VMs/Untitled.md",
+    "Programmazione/C",
+    "Programmazione",
+    "Challenge/PortSwigger/Senza nome.md",
+    "BOF/x86.md.md",
+    "BOF/ComandiUtili.md",
+    "Database/typeDB/TydeDB.md",
+    "Fuzzing/Fuzzing.md",
     "WAPT/PortSwigger Academy/SQLI",
     "WAPT/PortSwigger Academy",
     "Burp"

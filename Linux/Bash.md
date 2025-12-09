@@ -31,6 +31,7 @@ fi
 **RICORDA** che [ ] fanno riferimento al comando test ( *v. man [* )
 
 ### Cicli
+
 #### For Loop
 ```bash
 for var-name in <list> 
