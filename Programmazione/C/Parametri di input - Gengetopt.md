@@ -74,7 +74,7 @@ verbose("Output string: %s\n", tool_input.output_arg);
 Gengetopt gestisce automaticamente:
 
 - `--help`
-- `--version    
+- `--version`  
 - errori di sintassi
 - messaggi di usage
 - validazione dei parametri richiesti
@@ -83,3 +83,54 @@ Gengetopt gestisce automaticamente:
 https://bikulov.org/blog/2013/10/26/command-line-arguments-in-c-and-c-with-gengetopt/
 https://stackoverflow.com/questions/9642732/parsing-command-line-arguments-in-c
 https://www.gnu.org/software/gengetopt/gengetopt.html
+
+## Implementazione verbose
+È buona pratica prevedere un _verbose flag_ per fornire all’utente informazioni di debug aggiuntive, utili durante lo sviluppo e l’analisi di eventuali malfunzionamenti, senza impattare il comportamento normale dell’applicazione.  Il meccanismo può essere implementato tramite una semplice variabile globale controllata da funzioni di abilitazione e stampa condizionale.
+
+**File header (`.h`)**
+
+```C
+/**
+* @brief Enable or disable verbose output.
+*
+* @param enabled true to enable verbose logging, false to disable it.
+*/
+
+void setVerbose(int enabled);
+
+/**
+* @brief Print a message only when verbose mode is enabled.
+*
+* @param msg Null-terminated message to print.
+* @return The number of bytes printed when verbose mode is enabled,
+* or 0 when verbose mode is disabled.
+*/
+
+int verbose(const char * restrict format, ...);
+```
+
+**File sorgente (`.c`)**
+
+```C
+int verbose_flag = 0;
+
+void setVerbose(int enabled) {
+	verbose_flag = enabled;
+}
+
+int verbose (const char * restrict format, ...) {
+	if (!verbose_flag) {
+		return 0;
+	}
+
+	va_list args;
+	va_start(args, format);
+	int ret = vprintf(format, args);
+	va_end(args);
+	
+	return ret;
+}
+```
+
+### Link
+https://stackoverflow.com/questions/36095915/implementing-verbose-in-c
